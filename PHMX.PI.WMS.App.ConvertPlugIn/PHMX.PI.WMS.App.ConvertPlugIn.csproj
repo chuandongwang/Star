@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CE3F4EB1-815F-41D3-AE40-D461337AD6A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PHMX.PI.WMS.App.ConvertPlugIn</RootNamespace>
+    <AssemblyName>PHMX.PI.WMS.App.ConvertPlugIn</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ReferencePath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin</ReferencePath>
+    <OutputPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\Program Files %28x86%29\Kingdee\K3Cloud\WebSite\BIN\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BAH.BOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\BAH.BOS.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BAH.BOS.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\BAH.BOS.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BAH.BOS.Core.Extension, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\BAH.BOS.Core.Extension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BAH.BOS.Extension, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\BAH.BOS.Extension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BAH.Extension, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\BAH.Extension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BAH.PI.WMS.Core, Version=1.1.382.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\BAH.PI.WMS.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Kingdee.BOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.App, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.App.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.App.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.DataEntity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.DataEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.ServiceHelper, Version=7.1.675.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.ServiceHelper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Kingdee.K3.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.K3.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PHMX.PI.WMS.App.ServicePlugIn, Version=0.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\PHMX.PI.WMS.App.ServicePlugIn.dll</HintPath>
+    </Reference>
+    <Reference Include="PHMX.PI.WMS.Contracts, Version=0.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\PHMX.PI.WMS.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="PHMX.PI.WMS.Core, Version=0.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\PHMX.PI.WMS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connector\PRDFeedMtrlBench.cs" />
+    <Compile Include="Connector\SPOUTSTOCKBench.cs" />
+    <Compile Include="Connector\SPPickMtrlBench.cs" />
+    <Compile Include="Connector\SPInStockBench.cs" />
+    <Compile Include="Connector\PRDInStockBench.cs" />
+    <Compile Include="Connector\PRDPickMtrlBench.cs" />
+    <Compile Include="Connector\PRDReturnMtrlBench.cs" />
+    <Compile Include="Connector\PURMRBBench.cs" />
+    <Compile Include="Connector\SALOUTSTOCKBench.cs" />
+    <Compile Include="Connector\SALRETURNSTOCKBench.cs" />
+    <Compile Include="Connector\STKInStockBench.cs" />
+    <Compile Include="Connector\STKMISCELLANEOUSBench.cs" />
+    <Compile Include="Connector\STKMisDeliveryBench.cs" />
+    <Compile Include="Connector\STKTransferDirectBench.cs" />
+    <Compile Include="Connector\STKTRANSFERINBench.cs" />
+    <Compile Include="Connector\STKTRANSFEROUTBench.cs" />
+    <Compile Include="Connector\SUBFEEDMTRLBench.cs" />
+    <Compile Include="Connector\SUBPickMtrlBench.cs" />
+    <Compile Include="Connector\SPReturnMtrlBench.cs" />
+    <Compile Include="Connector\SUBRETURNMTRLBench.cs" />
+    <Compile Include="Connector\TakeDefaultConvertRule.cs" />
+    <Compile Include="InBoundToBillStation\IgnoreNotNeedTobeGenerated.cs" />
+    <Compile Include="OutboundToBillStation\IgnoreNotNeedTobeGenerated.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransferApply\MatchInNoticeContact.cs" />
+    <Compile Include="TransferApply\MatchOutNoticeContact.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

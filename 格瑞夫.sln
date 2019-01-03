@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHMX.PI.WMS.WebAPI.ServiceStub", "PHMX.PI.WMS.WebAPI.ServiceStub\PHMX.PI.WMS.WebAPI.ServiceStub.csproj", "{0E722852-8948-4C43-93B5-330225A003FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHMX.K3.BD.App.ServicePlugIn", "PHMX.K3.BD.App.ServicePlugIn\PHMX.K3.BD.App.ServicePlugIn.csproj", "{4BF16AFA-3417-4962-92D5-4C8EF3A1296D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHMX.K3.SCM.STK.App.ServicePlugIn", "PHMX.K3.SCM.STK.App.ServicePlugIn\PHMX.K3.SCM.STK.App.ServicePlugIn.csproj", "{B339C5CE-00A4-45C4-826E-628162E33C9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHMX.PI.BD.App.ServicePlugIn", "PHMX.PI.BD.App.ServicePlugIn\PHMX.PI.BD.App.ServicePlugIn.csproj", "{0FCCE278-CD92-4E75-A050-538C4D88CA13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHMX.PI.WMS.App.ConvertPlugIn", "PHMX.PI.WMS.App.ConvertPlugIn\PHMX.PI.WMS.App.ConvertPlugIn.csproj", "{CE3F4EB1-815F-41D3-AE40-D461337AD6A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHMX.PI.WMS.App.Core", "PHMX.PI.WMS.App.Core\PHMX.PI.WMS.App.Core.csproj", "{AC45947F-8CE6-4B1C-B97C-6807DE5FF0F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHMX.PI.WMS.App.ServicePlugIn", "PHMX.PI.WMS.App.ServicePlugIn\PHMX.PI.WMS.App.ServicePlugIn.csproj", "{4311A81B-725E-45F5-BF05-CD47229E7BE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHMX.PI.WMS.Contracts", "PHMX.PI.WMS.Contracts\PHMX.PI.WMS.Contracts.csproj", "{B61909CB-840A-44DD-A6B1-5A4CF63AF7FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHMX.PI.WMS.Core", "PHMX.PI.WMS.Core\PHMX.PI.WMS.Core.csproj", "{EF5664E5-4BD0-4743-90D8-63B1A4A15D72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHMX.PI.WMS.Business.PlugIn", "PHMX.PI.WMS.Business.PlugIn\PHMX.PI.WMS.Business.PlugIn.csproj", "{9E3BC736-34FE-45DD-8906-9D9D42FA8E8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E722852-8948-4C43-93B5-330225A003FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E722852-8948-4C43-93B5-330225A003FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E722852-8948-4C43-93B5-330225A003FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E722852-8948-4C43-93B5-330225A003FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BF16AFA-3417-4962-92D5-4C8EF3A1296D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BF16AFA-3417-4962-92D5-4C8EF3A1296D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BF16AFA-3417-4962-92D5-4C8EF3A1296D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BF16AFA-3417-4962-92D5-4C8EF3A1296D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B339C5CE-00A4-45C4-826E-628162E33C9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B339C5CE-00A4-45C4-826E-628162E33C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B339C5CE-00A4-45C4-826E-628162E33C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B339C5CE-00A4-45C4-826E-628162E33C9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FCCE278-CD92-4E75-A050-538C4D88CA13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FCCE278-CD92-4E75-A050-538C4D88CA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FCCE278-CD92-4E75-A050-538C4D88CA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FCCE278-CD92-4E75-A050-538C4D88CA13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE3F4EB1-815F-41D3-AE40-D461337AD6A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE3F4EB1-815F-41D3-AE40-D461337AD6A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE3F4EB1-815F-41D3-AE40-D461337AD6A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE3F4EB1-815F-41D3-AE40-D461337AD6A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC45947F-8CE6-4B1C-B97C-6807DE5FF0F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC45947F-8CE6-4B1C-B97C-6807DE5FF0F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC45947F-8CE6-4B1C-B97C-6807DE5FF0F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC45947F-8CE6-4B1C-B97C-6807DE5FF0F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4311A81B-725E-45F5-BF05-CD47229E7BE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4311A81B-725E-45F5-BF05-CD47229E7BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4311A81B-725E-45F5-BF05-CD47229E7BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4311A81B-725E-45F5-BF05-CD47229E7BE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B61909CB-840A-44DD-A6B1-5A4CF63AF7FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B61909CB-840A-44DD-A6B1-5A4CF63AF7FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B61909CB-840A-44DD-A6B1-5A4CF63AF7FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B61909CB-840A-44DD-A6B1-5A4CF63AF7FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF5664E5-4BD0-4743-90D8-63B1A4A15D72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF5664E5-4BD0-4743-90D8-63B1A4A15D72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF5664E5-4BD0-4743-90D8-63B1A4A15D72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF5664E5-4BD0-4743-90D8-63B1A4A15D72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E3BC736-34FE-45DD-8906-9D9D42FA8E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E3BC736-34FE-45DD-8906-9D9D42FA8E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E3BC736-34FE-45DD-8906-9D9D42FA8E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E3BC736-34FE-45DD-8906-9D9D42FA8E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

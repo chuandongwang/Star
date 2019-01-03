@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssemblyModel xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>748f1ef8-d4b5-492d-954a-284c278bb5d0</Id>
+  <MasterId>K3Cloud</MasterId>
+  <Name>程序集包</Name>
+  <Developer>
+    <Id>PHMX</Id>
+    <DevCode>PHMX</DevCode>
+    <Level>1</Level>
+    <Name>PHMX</Name>
+  </Developer>
+  <RequiredPackages />
+  <ExclusivePackages />
+  <IsSuperPkg>false</IsSuperPkg>
+  <IncludedExtended>false</IncludedExtended>
+  <DevPhase>Unknown</DevPhase>
+  <CanBeStopped>false</CanBeStopped>
+  <Deploy>Business</Deploy>
+  <PackageCategory>FuncPackage</PackageCategory>
+  <IsReplace>true</IsReplace>
+  <LocaleId>0</LocaleId>
+  <Issues />
+  <Links />
+  <PreInstallMsg />
+  <AfterInstallMsg />
+  <PlugIns />
+  <KDServices>
+    <DataEntities />
+    <Contracts />
+    <ServiceHelpers />
+    <AppServices>
+      <KDComponent xsi:type="DotNetProjectComponent">
+        <Target>CompileAndPackage</Target>
+        <Name>PHMX.K3.BD.App.ServicePlugIn.csproj</Name>
+        <ComponentPath>PHMX.K3.BD.App.ServicePlugIn\PHMX.K3.BD.App.ServicePlugIn.csproj</ComponentPath>
+        <Type>Assembly</Type>
+        <OpeType>AddOrUpdate</OpeType>
+        <IsSign>false</IsSign>
+        <OutputPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin</OutputPath>
+        <CopyToPaths />
+        <Condition />
+        <OutputAssemblyFile>PHMX.K3.BD.App.ServicePlugIn.dll</OutputAssemblyFile>
+        <GenerateManifests>false</GenerateManifests>
+        <ReferencePaths>
+          <string>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\BIN</string>
+        </ReferencePaths>
+        <TargetPlatform />
+        <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+        <OtherOutputResources />
+        <SmartAssembly>false</SmartAssembly>
+      </KDComponent>
+      <KDComponent xsi:type="DotNetProjectComponent">
+        <Target>CompileAndPackage</Target>
+        <Name>PHMX.K3.SCM.STK.App.ServicePlugIn.csproj</Name>
+        <ComponentPath>PHMX.K3.SCM.STK.App.ServicePlugIn\PHMX.K3.SCM.STK.App.ServicePlugIn.csproj</ComponentPath>
+        <Type>Assembly</Type>
+        <OpeType>AddOrUpdate</OpeType>
+        <IsSign>false</IsSign>
+        <OutputPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin</OutputPath>
+        <CopyToPaths />
+        <Condition />
+        <OutputAssemblyFile>PHMX.K3.SCM.STK.App.ServicePlugIn.dll</OutputAssemblyFile>
+        <GenerateManifests>false</GenerateManifests>
+        <ReferencePaths>
+          <string>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\BIN</string>
+        </ReferencePaths>
+        <TargetPlatform />
+        <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+        <OtherOutputResources />
+        <SmartAssembly>false</SmartAssembly>
+      </KDComponent>
+      <KDComponent xsi:type="DotNetProjectComponent">
+        <Target>CompileAndPackage</Target>
+        <Name>PHMX.PI.BD.App.ServicePlugIn.csproj</Name>
+        <ComponentPath>PHMX.PI.BD.App.ServicePlugIn\PHMX.PI.BD.App.ServicePlugIn.csproj</ComponentPath>
+        <Type>Assembly</Type>
+        <OpeType>AddOrUpdate</OpeType>
+        <IsSign>false</IsSign>
+        <OutputPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin</OutputPath>
+        <CopyToPaths />
+        <Condition />
+        <OutputAssemblyFile>PHMX.PI.BD.App.ServicePlugIn.dll</OutputAssemblyFile>
+        <GenerateManifests>false</GenerateManifests>
+        <ReferencePaths>
+          <string>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\BIN</string>
+        </ReferencePaths>
+        <TargetPlatform />
+        <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+        <OtherOutputResources />
+        <SmartAssembly>false</SmartAssembly>
+      </KDComponent>
+      <KDComponent xsi:type="DotNetProjectComponent">
+        <Target>CompileAndPackage</Target>
+        <Name>PHMX.PI.WMS.App.ServicePlugIn.csproj</Name>
+        <ComponentPath>PHMX.PI.WMS.App.ServicePlugIn\PHMX.PI.WMS.App.ServicePlugIn.csproj</ComponentPath>
+        <Type>Assembly</Type>
+        <OpeType>AddOrUpdate</OpeType>
+        <IsSign>false</IsSign>
+        <OutputPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin</OutputPath>
+        <CopyToPaths />
+        <Condition />
+        <OutputAssemblyFile>PHMX.PI.WMS.App.ServicePlugIn.dll</OutputAssemblyFile>
+        <GenerateManifests>false</GenerateManifests>
+        <ReferencePaths>
+          <string>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\BIN</string>
+        </ReferencePaths>
+        <TargetPlatform />
+        <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+        <OtherOutputResources />
+        <SmartAssembly>false</SmartAssembly>
+      </KDComponent>
+    </AppServices>
+    <Resources />
+  </KDServices>
+  <OtherComponents>
+    <KDComponent xsi:type="DotNetProjectComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>PHMX.K3.BD.App.ServicePlugIn.csproj</Name>
+      <ComponentPath>PHMX.K3.BD.App.ServicePlugIn\PHMX.K3.BD.App.ServicePlugIn.csproj</ComponentPath>
+      <Type>Assembly</Type>
+      <OpeType>AddOrUpdate</OpeType>
+      <IsSign>false</IsSign>
+      <OutputPath>Bin</OutputPath>
+      <CopyToPaths />
+      <Condition />
+      <OutputAssemblyFile>PHMX.K3.BD.App.ServicePlugIn.dll</OutputAssemblyFile>
+      <GenerateManifests>false</GenerateManifests>
+      <ReferencePaths>
+        <string>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin</string>
+      </ReferencePaths>
+      <TargetPlatform />
+      <OtherOutputResources />
+      <SmartAssembly>false</SmartAssembly>
+    </KDComponent>
+    <KDComponent xsi:type="DotNetProjectComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>PHMX.K3.SCM.STK.App.ServicePlugIn.csproj</Name>
+      <ComponentPath>PHMX.K3.SCM.STK.App.ServicePlugIn\PHMX.K3.SCM.STK.App.ServicePlugIn.csproj</ComponentPath>
+      <Type>Assembly</Type>
+      <OpeType>AddOrUpdate</OpeType>
+      <IsSign>false</IsSign>
+      <OutputPath>Bin</OutputPath>
+      <CopyToPaths />
+      <Condition />
+      <OutputAssemblyFile>PHMX.K3.SCM.STK.App.ServicePlugIn.dll</OutputAssemblyFile>
+      <GenerateManifests>false</GenerateManifests>
+      <ReferencePaths>
+        <string>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin</string>
+      </ReferencePaths>
+      <TargetPlatform />
+      <OtherOutputResources />
+      <SmartAssembly>false</SmartAssembly>
+    </KDComponent>
+    <KDComponent xsi:type="DotNetProjectComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>PHMX.PI.BD.App.ServicePlugIn.csproj</Name>
+      <ComponentPath>PHMX.PI.BD.App.ServicePlugIn\PHMX.PI.BD.App.ServicePlugIn.csproj</ComponentPath>
+      <Type>Assembly</Type>
+      <OpeType>AddOrUpdate</OpeType>
+      <IsSign>false</IsSign>
+      <OutputPath>Bin</OutputPath>
+      <CopyToPaths />
+      <Condition />
+      <OutputAssemblyFile>PHMX.PI.BD.App.ServicePlugIn.dll</OutputAssemblyFile>
+      <GenerateManifests>false</GenerateManifests>
+      <ReferencePaths>
+        <string>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin</string>
+      </ReferencePaths>
+      <TargetPlatform />
+      <OtherOutputResources />
+      <SmartAssembly>false</SmartAssembly>
+    </KDComponent>
+    <KDComponent xsi:type="DotNetProjectComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>PHMX.PI.WMS.App.ConvertPlugIn.csproj</Name>
+      <ComponentPath>PHMX.PI.WMS.App.ConvertPlugIn\PHMX.PI.WMS.App.ConvertPlugIn.csproj</ComponentPath>
+      <Type>Assembly</Type>
+      <OpeType>AddOrUpdate</OpeType>
+      <IsSign>false</IsSign>
+      <OutputPath>Bin</OutputPath>
+      <CopyToPaths />
+      <Condition />
+      <OutputAssemblyFile>PHMX.PI.WMS.App.ConvertPlugIn.dll</OutputAssemblyFile>
+      <GenerateManifests>false</GenerateManifests>
+      <ReferencePaths>
+        <string>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin</string>
+      </ReferencePaths>
+      <TargetPlatform />
+      <OtherOutputResources />
+      <SmartAssembly>false</SmartAssembly>
+    </KDComponent>
+    <KDComponent xsi:type="DotNetProjectComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>PHMX.PI.WMS.App.Core.csproj</Name>
+      <ComponentPath>PHMX.PI.WMS.App.Core\PHMX.PI.WMS.App.Core.csproj</ComponentPath>
+      <Type>Assembly</Type>
+      <OpeType>AddOrUpdate</OpeType>
+      <IsSign>false</IsSign>
+      <OutputPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin</OutputPath>
+      <CopyToPaths />
+      <Condition />
+      <OutputAssemblyFile>PHMX.PI.WMS.App.Core.dll</OutputAssemblyFile>
+      <GenerateManifests>false</GenerateManifests>
+      <ReferencePaths>
+        <string>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\BIN</string>
+      </ReferencePaths>
+      <TargetPlatform />
+      <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+      <OtherOutputResources />
+      <SmartAssembly>false</SmartAssembly>
+    </KDComponent>
+    <KDComponent xsi:type="DotNetProjectComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>PHMX.PI.WMS.App.ServicePlugIn.csproj</Name>
+      <ComponentPath>PHMX.PI.WMS.App.ServicePlugIn\PHMX.PI.WMS.App.ServicePlugIn.csproj</ComponentPath>
+      <Type>Assembly</Type>
+      <OpeType>AddOrUpdate</OpeType>
+      <IsSign>false</IsSign>
+      <OutputPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin</OutputPath>
+      <CopyToPaths />
+      <Condition />
+      <OutputAssemblyFile>PHMX.PI.WMS.App.ServicePlugIn.dll</OutputAssemblyFile>
+      <GenerateManifests>false</GenerateManifests>
+      <ReferencePaths>
+        <string>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\BIN</string>
+      </ReferencePaths>
+      <TargetPlatform />
+      <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+      <OtherOutputResources />
+      <SmartAssembly>false</SmartAssembly>
+    </KDComponent>
+    <KDComponent xsi:type="DotNetProjectComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>PHMX.PI.WMS.Contracts.csproj</Name>
+      <ComponentPath>PHMX.PI.WMS.Contracts\PHMX.PI.WMS.Contracts.csproj</ComponentPath>
+      <Type>Assembly</Type>
+      <OpeType>AddOrUpdate</OpeType>
+      <IsSign>false</IsSign>
+      <OutputPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin</OutputPath>
+      <CopyToPaths />
+      <Condition />
+      <OutputAssemblyFile>PHMX.PI.WMS.Contracts.dll</OutputAssemblyFile>
+      <GenerateManifests>false</GenerateManifests>
+      <ReferencePaths>
+        <string>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\BIN</string>
+      </ReferencePaths>
+      <TargetPlatform />
+      <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+      <OtherOutputResources />
+      <SmartAssembly>false</SmartAssembly>
+    </KDComponent>
+    <KDComponent xsi:type="DotNetProjectComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>PHMX.PI.WMS.Core.csproj</Name>
+      <ComponentPath>PHMX.PI.WMS.Core\PHMX.PI.WMS.Core.csproj</ComponentPath>
+      <Type>Assembly</Type>
+      <OpeType>AddOrUpdate</OpeType>
+      <IsSign>false</IsSign>
+      <OutputPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin</OutputPath>
+      <CopyToPaths />
+      <Condition />
+      <OutputAssemblyFile>PHMX.PI.WMS.Core.dll</OutputAssemblyFile>
+      <GenerateManifests>false</GenerateManifests>
+      <ReferencePaths>
+        <string>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\BIN</string>
+      </ReferencePaths>
+      <TargetPlatform />
+      <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+      <OtherOutputResources />
+      <SmartAssembly>false</SmartAssembly>
+    </KDComponent>
+    <KDComponent xsi:type="DotNetProjectComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>PHMX.PI.WMS.WebAPI.ServiceStub.csproj</Name>
+      <ComponentPath>PHMX.PI.WMS.WebAPI.ServiceStub\PHMX.PI.WMS.WebAPI.ServiceStub.csproj</ComponentPath>
+      <Type>Assembly</Type>
+      <OpeType>AddOrUpdate</OpeType>
+      <IsSign>false</IsSign>
+      <OutputPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin</OutputPath>
+      <CopyToPaths />
+      <Condition />
+      <OutputAssemblyFile>PHMX.PI.WMS.WebAPI.ServiceStub.dll</OutputAssemblyFile>
+      <GenerateManifests>false</GenerateManifests>
+      <ReferencePaths>
+        <string>..\..\..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\BIN</string>
+      </ReferencePaths>
+      <TargetPlatform />
+      <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+      <OtherOutputResources />
+      <SmartAssembly>false</SmartAssembly>
+    </KDComponent>
+  </OtherComponents>
+  <TestPlugIns />
+  <Resources />
+  <BusinessPlugIns />
+</AssemblyModel>
