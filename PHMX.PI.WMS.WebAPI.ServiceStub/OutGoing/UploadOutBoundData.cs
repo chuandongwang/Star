@@ -19,13 +19,13 @@ using System.Web.Script.Serialization;
 
 namespace PHMX.PI.WMS.WebAPI.ServiceStub.OutGoing
 {
-    public class UploadOutBoundData : AbstractWebApiBusinessService
+    public class UploadOutDetailData : AbstractWebApiBusinessService
     {
-        public UploadOutBoundData(KDServiceContext context) : base(context)
+        public UploadOutDetailData(KDServiceContext context) : base(context)
         {
         }
         /// <summary>
-        /// 上传PDA发货信息，直接生成发货明细
+        /// 上传PDA发货信息
 
         public ServiceResult ExecuteService(string Rawinput)
         {
@@ -83,12 +83,12 @@ namespace PHMX.PI.WMS.WebAPI.ServiceStub.OutGoing
         {
             
             //取默认转换规则。
-            var rule = ConvertServiceHelper.GetConvertRules(ctx, "BAH_WMS_OutNotice", "BAH_WMS_Pickup")
+            var rule = ConvertServiceHelper.GetConvertRules(ctx, "BAH_WMS_OutNotice", "BAH_WMS_Outbound")
                                      .Where(element => element.IsDefault)
                                      .FirstOrDefault();
             if (rule == null)
             {
-                throw new KDBusinessException("RuleNotFound", "未找到发货明细至拣货明细之间，启用的转换规则，无法自动下推！");
+                throw new KDBusinessException("RuleNotFound", "未找到发货通知至发货明细之间，启用的转换规则，无法自动下推！");
             }
 
             ListSelectedRowCollection listSelectedRowCollection = new ListSelectedRowCollection();
@@ -139,27 +139,27 @@ namespace PHMX.PI.WMS.WebAPI.ServiceStub.OutGoing
                         string EnableCapacity = WarehouseSub.FirstOrDefault()["EnableCapacity"].ToString();
                         var item = sources.ElementAt(i);
                         inDetailDynamicFormView.SetItemValueByID("FPHMXWgt", item.PHMXWgt, rowIndex);
-                        inDetailDynamicFormView.UpdateValue("FFromTrackNo", rowIndex, item.FromTrackNo);
-                        inDetailDynamicFormView.UpdateValue("FToTrackNo", rowIndex, item.ToTrackNo);
-                        inDetailDynamicFormView.SetItemValueByID("FFromLocId", item.FromLocId, rowIndex);
-                        inDetailDynamicFormView.SetItemValueByID("FToLocId", item.ToLocId, rowIndex);
-                        inDetailDynamicFormView.UpdateValue("FLotNo", rowIndex, item.BatchNo);
+                        
+                       
+                        inDetailDynamicFormView.SetItemValueByID("FLocId", item.FromLocId, rowIndex);
+                        
+                        
                         if (EnableCapacity == "False")
                         {
-                            inDetailDynamicFormView.SetItemValueByID("FFromUnitId", item.ToUnitId, rowIndex);
-                            inDetailDynamicFormView.UpdateValue("FFromQty", rowIndex, item.ToQty);
+                            inDetailDynamicFormView.SetItemValueByID("FUnitId", item.ToUnitId, rowIndex);
+                            inDetailDynamicFormView.UpdateValue("FQty", rowIndex, item.ToQty);
                         }
                         else
                         {
                             if(item.ToAvgCty == 0)
                             {
-                                inDetailDynamicFormView.UpdateValue("FFromCty", rowIndex, item.ToCty);
+                                inDetailDynamicFormView.UpdateValue("FCty", rowIndex, item.ToCty);
                             }
                             else
                             {
-                                inDetailDynamicFormView.UpdateValue("FFromAvgCty", rowIndex, item.ToAvgCty);
-                                inDetailDynamicFormView.SetItemValueByID("FFromUnitId", item.ToUnitId, rowIndex);
-                                inDetailDynamicFormView.UpdateValue("FFromQty", rowIndex, item.ToQty);
+                                inDetailDynamicFormView.UpdateValue("FAvgCty", rowIndex, item.ToAvgCty);
+                                inDetailDynamicFormView.SetItemValueByID("FUnitId", item.ToUnitId, rowIndex);
+                                inDetailDynamicFormView.UpdateValue("FQty", rowIndex, item.ToQty);
 
                             }
                         }
@@ -171,18 +171,6 @@ namespace PHMX.PI.WMS.WebAPI.ServiceStub.OutGoing
                         //inDetailDynamicFormView.UpdateValue("FProduceDate", rowIndex, item.KFDate);
                         //inDetailDynamicFormView.UpdateValue("FExpPeriod", rowIndex, item.ExpPeriod);
                         //inDetailDynamicFormView.UpdateValue("FSerialNo", rowIndex, item.SerialNo);    
-                        if (item.KFDate != null)
-                        {
-                            inDetailDynamicFormView.UpdateValue("FProduceDate", rowIndex, item.KFDate);
-                        }
-                        if (item.ExpPeriod != 0)
-                        {
-                            inDetailDynamicFormView.UpdateValue("FExpPeriod", rowIndex, item.ExpPeriod);
-                        }
-                        if (item.ExpUnit != null)
-                        {
-                            inDetailDynamicFormView.UpdateValue("FExpUnit", rowIndex, item.ExpUnit);
-                        }
 
                         //inDetailDynamicFormView.UpdateValue("FTrayNo", rowIndex, item.TrayNo);
                         //inDetailDynamicFormView.UpdateValue("FEntryRemark", rowIndex, item.Remark);

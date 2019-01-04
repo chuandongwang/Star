@@ -146,6 +146,7 @@
     <Compile Include="OutGoing\ReturnOutNoticeBillNoLinkPick.cs" />
     <Compile Include="OutGoing\ReturnOutNoticeDetailByBillNo.cs" />
     <Compile Include="OutGoing\ReturnOutNoticeByMaterial.cs" />
+    <Compile Include="OutGoing\UploadOutBoundData.cs" />
     <Compile Include="OutGoing\UploadOutDetailData.cs" />
     <Compile Include="OutboundDetailLinkInDetailDto\OutboundDetailBillEntryInput.cs" />
     <Compile Include="OutboundDetailLinkInDetailDto\OutboundDetailEntryLinkInNotice.cs" />
